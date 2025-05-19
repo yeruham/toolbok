@@ -6,7 +6,7 @@ public class Hammer: Tool
 
     public override void Describe()
     {
-        Console.WriteLine($"this is a {this._name}");
+        Console.WriteLine($"this is a {this._name}. its weight is {this._weight}. Used to hit or drive nails");
     }
 
     public override void Use()
