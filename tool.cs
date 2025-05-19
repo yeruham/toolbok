@@ -1,16 +1,24 @@
 ﻿using System;
 
-public class Tool
+public  class Tool
 {
-    private string _name;
-    private string _weight;
+    protected string _name;
+    protected int _weight;
+    protected bool _inUse;
 
-    public void Describe()
+    public Tool(string name, int weight, bool inUse = true)
+    {
+        this._name = name;
+        this._weight = weight;
+        this._inUse = inUse;
+    }
+
+    public virtual void Describe()
     {
         Console.WriteLine("this is tool");
     }
 
-    public void Use()
+    public virtual void Use()
     {
         Console.WriteLine("Tool is being used.");
     }
